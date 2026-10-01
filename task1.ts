@@ -2,31 +2,31 @@
 
 // TASK 1
 
-console.log("A");
+// console.log("A");
 
-setTimeout(() => {
-  console.log("B");
-});
+// setTimeout(() => {
+//   console.log("B");
+// });
 
-setTimeout(() => {
-  const promise = new Promise((resolve) => {
-    console.log("C");
+// setTimeout(() => {
+//   const promise = new Promise((resolve) => {
+//     console.log("C");
 
-    resolve("D");
+//     resolve("D");
 
-    console.log("E");
-  });
+//     console.log("E");
+//   });
 
-  promise.then((value) => {
-    console.log(value);
+//   promise.then((value) => {
+//     console.log(value);
 
-    setTimeout(() => {
-      console.log("F");
-    });
-  });
+//     setTimeout(() => {
+//       console.log("F");
+//     });
+//   });
 
-  console.log("G");
-});
+//   console.log("G");
+// });
 
 // TASK 2
 
@@ -86,21 +86,22 @@ setTimeout(() => {
 // console.log("End");
 
 // console.log("p2 =>>", p2);
+// Promise creation 123 End p2 =>> Promise.pending Promise resolving timeout
 
 // TASK 5
 
-// console.log("script start");
+console.log("script start");
 
-// setTimeout(function () {
-//   console.log("setTimeout");
-// }, 0);
+setTimeout(function () {
+  console.log("setTimeout");
+}, 0);
 
-// Promise.resolve()
-//   .then(function () {
-//     console.log("promise1");
-//   })
-//   .then(function () {
-//     console.log("promise2");
-//   });
+Promise.resolve()
+  .then(function () {
+    console.log("promise1");
+  })
+  .then(function () {
+    console.log("promise2");
+  });
 
-// console.log("script end");
+console.log("script end");
